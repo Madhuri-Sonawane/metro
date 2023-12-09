@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="metrotickiting.css">
+    <title>Metro Ticket</title>
+</head>
+<body>
+
+        
+    <form id="ticketForm" onsubmit="return bookTicket()">
+        <div class="legend">
+      <fieldset>
+           <h1>Metro Ticket Booking</h1>
+    <div class="form">
+        <div class="name">
+            <label for="name">name: </label>
+            <input type="text" id="userName" placeholder="Enter your name" required>
+        </div><br>
+        
+        <div class="gender">
+            SELECT GENDER: <br>
+            <input type="radio" name="gender" id="male" oninput="calculateTicket()" required>Male
+            <input type="radio" name="gender" id="female" oninput="calculateTicket()">Female
+        </div><br>
+        
+        <div class="age">Age:
+            <input type="number" id="userAge" placeholder="Enter your age" oninput="calculateTicket()" required>
+        </div><br>
+
+        <div class="ticket">Ticket amount:
+            <input type="text" id="display" readonly>
+        </div>
+<br>
+        <button onclick="bookticket()"> book ticket</button>
+    </div>
+</fieldset>
+</div>
+</form>
+
+
+
+<script>
+    function calculateTicket() {
+        let ticketAmount = 1000;
+        let userAge = parseInt(document.getElementById('userAge').value);
+        let gender = document.querySelector('input[name="gender"]:checked');
+
+        let ticket;
+
+        if (userAge <= 5) {
+            ticket = ticketAmount - (100 / 100 * 1000);
+        } else if (gender && gender.id === 'female' || userAge <= 8) {
+            ticket = ticketAmount - (50 / 100 * 1000);
+        } else if (userAge >= 65) {
+            ticket = ticketAmount - (30 / 100 * 1000);
+        } else {
+            ticket = ticketAmount;
+        }
+
+        document.getElementById('display').value = ticket;
+    }
+    function bookTicket() {
+        let userName = document.getElementById('userName').value;
+        let ticketAmount = document.getElementById('display').value;
+
+        if (userName && ticketAmount) {
+            alert(`Ticket booked for ${userName}!`);
+        } else {
+            alert('Please fill in all the details and calculate the ticket amount before booking.');
+        }
+    }
+</script>
+
+</body>
+
+</html>
+
+
+
