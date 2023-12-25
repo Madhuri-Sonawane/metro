@@ -1,0 +1,20 @@
+.splash_screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(127, 31%, 95%, 0.882); /* Set the background color for the splash screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; ; /* Text color */
+}
+.h1{
+    font-size: 3em; /* Adjust the font size as needed */
+    text-align: center;
+}
+img{
+    
+    height: 80px;
+}

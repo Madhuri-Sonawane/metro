@@ -28,6 +28,7 @@ background-attachment: fixed;
 }
 #userName{
 
+    
     background-color: rgba(255, 174, 127, 0.756);
 }
 #userAge{
@@ -76,22 +77,5 @@ justify-content: center;
 flex-direction: row;
 align-content: center;
 height: 400px;
-}
-
-.splash_screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: hsla(270, 59%, 51%, 0.379); /* Set the background color for the splash screen */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; ; /* Text color */
-}
-.splash_screen h1{
-    font-size: 3em; /* Adjust the font size as needed */
-    text-align: center;
 }
 
