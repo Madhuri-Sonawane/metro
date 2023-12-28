@@ -1,10 +1,18 @@
+body{
+    color: aliceblue;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://static.vecteezy.com/ti/photos-gratuite/p2/21689196-metro-gare-exces-de-vitesse-vite-former-gens-se-precipiter-a-le-electrique-former-flou-contexte-ai-genere-image-photo.jpg);
+}
 .splash_screen {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: hsla(127, 31%, 95%, 0.882); /* Set the background color for the splash screen */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://static.vecteezy.com/ti/photos-gratuite/p2/21689196-metro-gare-exces-de-vitesse-vite-former-gens-se-precipiter-a-le-electrique-former-flou-contexte-ai-genere-image-photo.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,8 +21,5 @@
 .h1{
     font-size: 3em; /* Adjust the font size as needed */
     text-align: center;
-}
-img{
     
-    height: 80px;
 }

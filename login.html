@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <form id="form">
+       <div id="main">
+        <div id="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQABbYWdCLrt_YQwdfYJ957EAu3bvs3ESGA-w&usqp=CAU" alt="metro photo">
+        </div>
+          <div id="login-details">
+            <label for="username">
+                <input type="text" name="username" id="username" placeholder="Enter your Username" required><br><br>
+            </label>
+            <label for="password">
+                <input type="password" name="password" id="password" placeholder="Enter Your Password Here" required> <br><br>
+            </label>
+            <button id="login">Login</button>  
+            <hr>
+            <div class="sign-up">
+                
+                    <span>Don't Have An Acoount ?</span>
+                    <a href="signup.html"> Signup</a>
+              
+    
+            </div>
+        </div>
+    </div>
+
+
+                
+
+
+    </form>
+    <script>
+        function login(){
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        
+        console.log("Username: " + username);
+        console.log("Password: " + password);
+
+       
+    }
+</script>
+</body>
+</html>

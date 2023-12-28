@@ -1,0 +1,99 @@
+body{
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #63a6c8c2;
+    background-size: 100% 100%;
+    background-image: url(https://img.freepik.com/premium-photo/train-with-blue-background-word-metro-it_256339-5983.jpg);
+}
+#form {
+    background-color: white;
+    padding: px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 510px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+#main{
+    max-width: 100%;
+    height: 100%;
+    
+    display: flex;
+    
+    
+}
+/* #image{
+    width: 50px;
+    height: 200px;
+   
+} */
+img{
+    height: 290px;
+    width: 250px;
+    margin-left: 1px;
+    border-radius: 5px;
+    margin-top: 5px;
+
+}
+#image, #login-details {
+    flex: 1;
+    }
+#login-details {
+    margin-left: 30px; /* Optional: Add some spacing between the image and login details */
+}
+label {
+    display: block; /* Optional: Make labels block-level for better spacing */
+}
+button {
+             
+
+        background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+      margin-top: 10px;
+        padding: 10px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+        height: 5vh;    
+    }
+   bu:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+input{
+    margin-top: 20px;
+    border:0px  none;
+    height: 25px;
+    transition: border-color 0.3s;
+  
+    
+
+}
+input:focus{
+   border-color: #26a0da;
+}
+hr{
+    border: 1px solid #075aba ;
+    width: 200px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #0334b0;
+
+
+}
+.sign-up{
+    display: flex;
+    margin-right: 1px;
+}

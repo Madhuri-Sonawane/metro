@@ -3,6 +3,10 @@
     padding: 0px;
     margin-top: 10px;
 }
+body{
+  background: rgb(2,108,172);
+  background: linear-gradient(90deg, rgba(2,108,172,1) 8%, rgba(62,198,204,1) 45%, rgba(103,203,223,1) 100%);
+}
 .logo{
     height: 50px;
     margin-left: 10px;
