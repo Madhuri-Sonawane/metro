@@ -9,62 +9,78 @@ body{
     justify-content: center;
     flex-direction:row;
     align-items: center;
-height: 100vh;
-background-image: url(https://images.unsplash.com/photo-1514241516423-6c0a5e031aa2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3VucmlzZXxlbnwwfHwwfHx8MA%3D%3D);
+            background-image: url('./metro1.jpg');
+    height: 100vh;
 background-size: 100% 100%;
 background-repeat:no-repeat;
 background-attachment: fixed;
 }
-
+fieldset{
+    border: none;
+}
 .legend{
     display: flex;
-   width: 350px;
-    background-color: rgba(174, 143, 41, 0.795);
+  width: 100%;
+  border-radius: 20px;
+
+  background-image: linear-gradient(160deg, #5a8ca9 0%, #80D0C7 100%);
+
+  /* background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+
     justify-content: center;
-    height: 273px;
-
-
+    height: 100%;
     
+    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;    
 }
-#userName{
 
-    
-    background-color: rgba(255, 174, 127, 0.756);
-}
-#userAge{
-    background-color: rgba(255, 174, 127, 0.756);   
-}
-#display{
-    background-color: rgba(255, 174, 127, 0.756);
-}
+
 button{
     background-color: black;
     color: white;
     text-transform: uppercase;
     height: 30px;
-    width: 100px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-     margin-left: 100px;
+    
+     display: block;
+
+     color: white;
+     font-family: Arial;
+     font-weight: 400;
+     padding:  10px 70px;
+     margin-bottom: 15px;
+     background-color: #0093E9;
+     background-image: linear-gradient(160deg, #0093E9 0%, #0093E9 100%);
+}
+.btc{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    
+
+}
+
+label{
+    font-family: Arial;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input{
+    border: 1px solid #ced4da;
+    margin-left: 5px;
     
 }
-.name{
-    display: flex;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: medium;
-}
-.gender{
-    display: flex;
-    font-weight: 700;
-    
-}
-.age{
-    display: flex;
-    font-weight: 700;
-    text-transform: uppercase;
-}
+
+
+
 .ticket{
     display: flex;
     font-weight: 700;

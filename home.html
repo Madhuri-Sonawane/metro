@@ -8,26 +8,89 @@
 </head>
 <body>
    <header>
-    
       
       <nav class="nav_bar">
-        <img class="logo" src="https://png.pngtree.com/png-clipart/20220823/original/pngtree-metro-rail-train-png-vector-download-png-image_8467230.png" alt="">
 
-        <a href="home.html">Home</a>
-        <a href="route.html">Route</a>
-        <a href="bookticket.html">Book Ticket</a>
-        <a href="About.html">About</a>
+        
+        <img class="logo" src="https://png.pngtree.com/png-clipart/20220823/original/pngtree-metro-rail-train-png-vector-download-png-image_8467230.png" alt=""    >
 
+
+        <div class="dropdown">
+         <a href="home.html">Home</a>
+         <div class="dropdown-content">
+           <ul>
+             <li><a href="#">Subitem 1</a></li>
+             <li><a href="#">Subitem 2</a></li>
+             <!-- Add more subitems as needed -->
+           </ul>
+         </div>
+       </div>
+     
+       <div class="dropdown">
+         <a href="route.html">Route</a>
+         <div class="dropdown-content">
+           <ul>
+             <li><a href="#">Subitem 1</a></li>
+             <li><a href="#">Subitem 2</a></li>
+             <!-- Add more subitems as needed -->
+           </ul>
+         </div>
+       </div>
+     
+       <div class="dropdown">
+         <a href="#bookticket.html">Ticket</a>
+         <div class="dropdown-content">
+           <ul>
+             <li><a href="#">login</a></li>
+             <li><a href="bookticket.html">Book Ticket</a></li>
+             <li><a href="#">check ticket book</a></li>
+             <!-- Add more subitems as needed -->
+           </ul>
+         </div>
+       </div>
+     
+       <div class="dropdown">
+         <a href="About.html">About</a>
+         <div class="dropdown-content">
+           <ul>
+             <li><a href="#">Subitem 1</a></li>
+             <li><a href="#">Subitem 2</a></li>
+             <!-- Add more subitems as needed -->
+           </ul>
+         </div>
+       </div>
 
       </nav>
       </header>
       <main>
         <div>
-            <img class="metro_img" src="metro.png" alt="">
+            <img class="metro_img" src="metro.png" alt="" >
+           <marquee behavior="" direction="right">
+            <h3 id="greeting"></h3>
+           </marquee>
+            
         </div>
       </main>
 
     
    </header>
+   <script>
+    let date =new Date();
+ let hours= date.getHours();
+ 
+ let heading = document.querySelector('#greeting');
+
+ if(hours >5 && hours<12){
+    heading.innerText = 'Good Morning';
+ }else if (hours >12 && hours <18){
+    heading.innerText = 'Good Afternoon';
+ }else if(hours>18 && hours <20){
+    heading.innerText = 'Good Evening'
+ }
+ else{
+    heading.innerText= 'Good Night'
+ }
+
+   </script>
 </body>
 </html>
