@@ -1,15 +1,17 @@
 body{
+   
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
-    background-color: #63a6c8c2;
+    
     background-size: 100% 100%;
     background-image: url(https://img.freepik.com/premium-photo/train-with-blue-background-word-metro-it_256339-5983.jpg);
 }
 #form {
+    position: fixed;
     background-color: white;
     padding: px;
     border-radius: 8px;
@@ -22,7 +24,7 @@ body{
 #main{
     max-width: 100%;
     height: 100%;
-    
+    position: fixed;
     display: flex;
     
     
@@ -50,9 +52,7 @@ label {
     display: block; /* Optional: Make labels block-level for better spacing */
 }
 button {
-             
-
-        background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+      background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
       margin-top: 10px;
         padding: 10px 45px;
         text-align: center;
@@ -63,9 +63,11 @@ button {
         box-shadow: 0 0 20px #eee;
         border-radius: 10px;
         display: block;
-        height: 5vh;    
+        height: 5vh;   
+        
     }
-   bu:hover {
+    
+   button:hover {
       background-position: right center; /* change the direction of the change here */
       color: #fff;
       text-decoration: none;
